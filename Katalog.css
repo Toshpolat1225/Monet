@@ -233,11 +233,21 @@ border: none;
 }
 .tableListCard .cardMonet{
     padding: 20px 30px 20px 22px;
+    position: relative;
 }
+ .tableListCard .cardMonet .testHover{
+     width: 20%;
+     position: absolute;
+} 
 .tableListCard .cardMonet .imgCard{
     width: 6.85%;
     margin-right: 30px;
 }
+/* .tableListCard .cardMonet .imgCard:hover + .cardMonet .test {
+    display: block;
+}
+   */
+ 
 .tableListCard .cardMonet p{
     margin: 0;
     /* 13 регуляр */
