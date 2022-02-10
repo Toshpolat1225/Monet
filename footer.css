@@ -1,0 +1,146 @@
+/* Footer Starting */
+
+footer {
+  background: #322e27;
+  margin-top: 100px;
+  position: relative;
+}
+
+footer .top_btn {
+  position: absolute;
+  width: 86px;
+  height: 86px;
+  right: 180px;
+  top: -55px;
+  background: #cfd8e3;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+footer .top_btn p {
+  margin-bottom: 0;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 100%;
+  color: #322e27;
+}
+
+footer .footer_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+footer .footer_container .right .right_top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer .footer_container .right .right_top ul {
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+footer .footer_container .right .right_top ul li a {
+  text-decoration: none;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 100%;
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+footer .footer_container .right .right_top .right_top_left ul li a {
+  margin-right: 20px;
+}
+footer .footer_container .right .right_top .right_top_right ul li a {
+  margin-left: 20px;
+}
+
+footer .footer_container .right .right_top ul li a:hover {
+  color: #f2af1e;
+}
+
+footer .footer_container .right .right_bottom {
+  border-top: 1px solid #ffffff;
+  padding-top: 15px;
+  margin-top: 15px;
+}
+
+footer .footer_container .right .right_bottom ul {
+  display: flex;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+footer .footer_container .right .right_bottom ul li a {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 100%;
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 20px;
+  transition: 0.3s;
+}
+
+footer .footer_container .right .right_bottom ul li a:hover {
+  color: #f2af1e;
+}
+
+footer .footer_bottom {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 15px 0;
+}
+
+footer .footer_bottom .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer .footer_bottom .container .left ul,
+footer .footer_bottom .container .right ul {
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+footer .footer_bottom .container .left ul li a,
+footer .footer_bottom .container .right ul li a {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 100%;
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+footer .footer_bottom .container .left ul li a:hover,
+footer .footer_bottom .container .right ul li a:hover {
+  color: #f2af1e;
+}
+
+footer .footer_bottom .container .left ul li a {
+  margin-right: 30px;
+}
+
+footer .footer_bottom .container .right ul li a {
+  margin-right: 10px;
+}

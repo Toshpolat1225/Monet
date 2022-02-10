@@ -8,15 +8,19 @@
 
         <!-- Navbar.css connection -->
         <link rel="stylesheet" href="./navbar.css">
+        <link rel="stylesheet" href="./footer.css">
 
         <!-- Montserrat connection -->
         <link
             href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
             rel="stylesheet">
-    
+
+            
         <!-- Fontawesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./Katalog.css">
     <title>Каталог</title>
 </head>
@@ -92,11 +96,11 @@
         </nav>
         <div class="URLkatalog">
             <div class="container">
-                <div class="row">
+                <div class="row align-items-center">
                     <div class="col-2">
                         <button><img src="./images/katalog/icon/KatalogMonet.svg" alt=""><span>Каталог монет</span><img src="./images/katalog/icon/Vector 15 (Stroke).svg" alt=""></button>
                     </div>
-                    <div class="col-10">
+                    <div class="col-10 urlkataloglist">
                         <ul>
                             <li>
                                 <a href="#!">Евразия</a>
@@ -122,31 +126,1105 @@
                         </ul>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row align-items-center">
+                    <div class="col-3 before"></div>
                     <div class="col-6">
                         <h1>Соединённое Королевство Великобритания</h1>
                     </div>
+                    <div class="col-3 after"></div>
                 </div>
             </div>
         </div>
     </header>
     <main>
         <div class="container">
-            <div class="row">
+            <div class="row filtrMenu justify-content-between">
                 <div class="col-2">
                     <button class="filtrKatalog"><img src="./images/katalog/icon/filtr.svg" alt=""><span>Скрыть фильтр</span></button>
                 </div>
-                <div class="col-6">
-                    
+                <div class="col-6 d-flex justify-content-end">
+                    <div class="sortKatalog d-flex align-items-center">
+                        <p>Сортировать по:</p>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Алфавиту</option>
+                            <option value="1">Году</option>
+                            <option value="2">Материалу</option>
+                            <option value="3">Выпуску</option>
+                          </select>
+                    </div>
+                    <div class="countKatalog d-flex align-items-center" >
+                        <p>Показывать по:</p>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>20</option>
+                            <option value="1">50</option>
+                            <option value="2">75</option>
+                            <option value="3">100</option>
+                          </select>
+                    </div>
+                    <div class="viewKatalog d-flex align-items-center">
+                        <button class="tableBtn">
+                            <img src="./images/katalog/icon/table.svg" alt="">
+
+                        </button>
+                        <button class="listBtn">
+                            <img src="./images/katalog/icon/list.svg" alt="">
+                            
+                        </button>
+                        <button class="cardBtn">
+                            <img src="./images/katalog/icon/card.svg" alt="">
+
+                        </button>
+
+
+
+                    </div>
                 </div>
             </div>
-            <div class="row filtrMenu">
-                <p>This is a paragraph.</p>
+            <div class="filtrSelect">
+            <div class="row"><div class="line"></div></div>
+            <div class="row  d-flex align-items-center">
+
+                    <select id="year" class="col-2">
+                        <option value="a" selected="selected">1988</option>
+                        <option value="b">1978</option>
+                        <option value="c">1968</option>
+                    </select>
+                    <select id="stile" class="col-2">
+                        <option value="a" selected="selected">Номинал</option>
+                        <option value="b">...</option>
+                        <option value="c">...</option>
+                    </select>
+                    <select id="money" class="col-2">
+                        <option value="a" selected="selected">Денежная единица</option>
+                        <option value="b">...</option>
+                        <option value="c">...</option>
+                    </select>
+                    <select id="material" class="col-2">
+                        <option value="a" selected="selected">Материал</option>
+                        <option value="b">...</option>
+                        <option value="c">...</option>
+                    </select>
+                    <select id="variant" class="col-2">
+                        <option value="a" selected="selected">Выпуск</option>
+                        <option value="b">...</option>
+                        <option value="c">...</option>
+                    </select>
+                    <div id="reset" class="resetFiltr">Сбросить фильтр</div>
+                </div>
             </div>
+            <div class="row"><div class="line"></div></div>
+            <div class="row d-flex justify-content-center tableMenu">
+                <div class="col-10 d-flex align-items-center">
+                    <div class="col-3">
+                        <button>Название</button>
+                    </div>
+                    <div class="col-4 d-flex align-items-center">
+                        <div class="col-4 d-flex justify-content-center">
+                            <button>год</button>
+                        </div>
+                        <div class="col-4">
+                            <button>материал</button>
+                        </div>
+                        <div class="col-4">
+                            <button>буквы</button>
+                        </div>
+                    </div>
+                    <div class="col-5 d-flex align-items-center">
+                        <div class="col-3">
+                            <button>гурт</button>
+                        </div>
+                        <div class="col-3">
+                            <button>выпуск</button>
+                        </div>
+                        <div class="col-3">
+                            <button>средняя цена</button>
+                        </div>
+                        <div class="col-3">
+                            <button>в продаже</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            
+            <div class="row tableListCard">
+
+
+                <div class="cardMonet d-flex align-items-center">
+                    <div class="imgCard d-flex">
+                        <div class="front">
+                            <img src="./images/katalog/front.png" alt="">
+                        </div>
+                        <div class="back">
+                            <img src="./images/katalog/back.png" alt="">
+                        </div>
+                    </div>
+                    <div class="nameCard">
+                        <p>
+                            25 пенсов "25 лет правления Елизаветы II" 
+                        </p>
+                    </div>
+                    <div class="yearCard">
+                        <p>
+                            1977
+                        </p>
+                    </div>
+                    <div class="materialCard">
+                        <p>алюминиевая бронза</p>
+                    </div>
+                    <div class="alfCard">
+                        <p>_ _</p>
+                    </div>
+                    <div class="gurdCard">
+                        <p>252 рифления</p>
+                    </div>
+                    <div class="kollekCard">
+                        <p>
+                            Коллекционная
+                        </p>
+                    </div>
+                    <div class="senaCard">
+                        <p>
+                            100 000 ₽
+                        </p>
+                        <img src="./images/katalog/icon/!.svg" alt="">
+                    </div>
+                    <div class="countCard">
+                        <p>100 шт.</p>
+                    </div>
+                    <img class="addMonet" src="./images/katalog/icon/addMonet.svg" alt="">
+                </div>
+                <div class="cardMonet d-flex align-items-center">
+                    <div class="imgCard d-flex">
+                        <div class="front">
+                            <img src="./images/katalog/front.png" alt="">
+                        </div>
+                        <div class="back">
+                            <img src="./images/katalog/back.png" alt="">
+                        </div>
+                    </div>
+                    <div class="nameCard">
+                        <p>
+                            25 пенсов "25 лет правления Елизаветы II" 
+                        </p>
+                    </div>
+                    <div class="yearCard">
+                        <p>
+                            1977
+                        </p>
+                    </div>
+                    <div class="materialCard">
+                        <p>алюминиевая бронза</p>
+                    </div>
+                    <div class="alfCard">
+                        <p>_ _</p>
+                    </div>
+                    <div class="gurdCard">
+                        <p>252 рифления</p>
+                    </div>
+                    <div class="kollekCard">
+                        <p>
+                            Коллекционная
+                        </p>
+                    </div>
+                    <div class="senaCard">
+                        <p>
+                            100 000 ₽
+                        </p>
+                        <img src="./images/katalog/icon/!.svg" alt="">
+                    </div>
+                    <div class="countCard">
+                        <p>100 шт.</p>
+                    </div>
+                    <img class="addMonet" src="./images/katalog/icon/addMonet.svg" alt="">
+                </div>
+                <div class="cardMonet d-flex align-items-center">
+                    <div class="imgCard d-flex">
+                        <div class="front">
+                            <img src="./images/katalog/front.png" alt="">
+                        </div>
+                        <div class="back">
+                            <img src="./images/katalog/back.png" alt="">
+                        </div>
+                    </div>
+                    <div class="nameCard">
+                        <p>
+                            25 пенсов "25 лет правления Елизаветы II" 
+                        </p>
+                    </div>
+                    <div class="yearCard">
+                        <p>
+                            1977
+                        </p>
+                    </div>
+                    <div class="materialCard">
+                        <p>алюминиевая бронза</p>
+                    </div>
+                    <div class="alfCard">
+                        <p>_ _</p>
+                    </div>
+                    <div class="gurdCard">
+                        <p>252 рифления</p>
+                    </div>
+                    <div class="kollekCard">
+                        <p>
+                            Коллекционная
+                        </p>
+                    </div>
+                    <div class="senaCard">
+                        <p>
+                            100 000 ₽
+                        </p>
+                        <img src="./images/katalog/icon/!.svg" alt="">
+                    </div>
+                    <div class="countCard">
+                        <p>100 шт.</p>
+                    </div>
+                    <img class="addMonet" src="./images/katalog/icon/addMonet.svg" alt="">
+                </div>
+                <div class="cardMonet d-flex align-items-center">
+                    <div class="imgCard d-flex">
+                        <div class="front">
+                            <img src="./images/katalog/front.png" alt="">
+                        </div>
+                        <div class="back">
+                            <img src="./images/katalog/back.png" alt="">
+                        </div>
+                    </div>
+                    <div class="nameCard">
+                        <p>
+                            25 пенсов "25 лет правления Елизаветы II" 
+                        </p>
+                    </div>
+                    <div class="yearCard">
+                        <p>
+                            1977
+                        </p>
+                    </div>
+                    <div class="materialCard">
+                        <p>алюминиевая бронза</p>
+                    </div>
+                    <div class="alfCard">
+                        <p>_ _</p>
+                    </div>
+                    <div class="gurdCard">
+                        <p>252 рифления</p>
+                    </div>
+                    <div class="kollekCard">
+                        <p>
+                            Коллекционная
+                        </p>
+                    </div>
+                    <div class="senaCard">
+                        <p>
+                            100 000 ₽
+                        </p>
+                        <img src="./images/katalog/icon/!.svg" alt="">
+                    </div>
+                    <div class="countCard">
+                        <p>100 шт.</p>
+                    </div>
+                    <img class="addMonet" src="./images/katalog/icon/addMonet.svg" alt="">
+                </div>
+                <div class="cardMonet d-flex align-items-center">
+                    <div class="imgCard d-flex">
+                        <div class="front">
+                            <img src="./images/katalog/front.png" alt="">
+                        </div>
+                        <div class="back">
+                            <img src="./images/katalog/back.png" alt="">
+                        </div>
+                    </div>
+                    <div class="nameCard">
+                        <p>
+                            25 пенсов "25 лет правления Елизаветы II" 
+                        </p>
+                    </div>
+                    <div class="yearCard">
+                        <p>
+                            1977
+                        </p>
+                    </div>
+                    <div class="materialCard">
+                        <p>алюминиевая бронза</p>
+                    </div>
+                    <div class="alfCard">
+                        <p>_ _</p>
+                    </div>
+                    <div class="gurdCard">
+                        <p>252 рифления</p>
+                    </div>
+                    <div class="kollekCard">
+                        <p>
+                            Коллекционная
+                        </p>
+                    </div>
+                    <div class="senaCard">
+                        <p>
+                            100 000 ₽
+                        </p>
+                        <img src="./images/katalog/icon/!.svg" alt="">
+                    </div>
+                    <div class="countCard">
+                        <p>100 шт.</p>
+                    </div>
+                    <img class="addMonet" src="./images/katalog/icon/addMonet.svg" alt="">
+                </div>
+                <div class="cardMonet d-flex align-items-center">
+                    <div class="imgCard d-flex">
+                        <div class="front">
+                            <img src="./images/katalog/front.png" alt="">
+                        </div>
+                        <div class="back">
+                            <img src="./images/katalog/back.png" alt="">
+                        </div>
+                    </div>
+                    <div class="nameCard">
+                        <p>
+                            25 пенсов "25 лет правления Елизаветы II" 
+                        </p>
+                    </div>
+                    <div class="yearCard">
+                        <p>
+                            1977
+                        </p>
+                    </div>
+                    <div class="materialCard">
+                        <p>алюминиевая бронза</p>
+                    </div>
+                    <div class="alfCard">
+                        <p>_ _</p>
+                    </div>
+                    <div class="gurdCard">
+                        <p>252 рифления</p>
+                    </div>
+                    <div class="kollekCard">
+                        <p>
+                            Коллекционная
+                        </p>
+                    </div>
+                    <div class="senaCard">
+                        <p>
+                            100 000 ₽
+                        </p>
+                        <img src="./images/katalog/icon/!.svg" alt="">
+                    </div>
+                    <div class="countCard">
+                        <p>100 шт.</p>
+                    </div>
+                    <img class="addMonet" src="./images/katalog/icon/addMonet.svg" alt="">
+                </div>
+                <div class="cardMonet d-flex align-items-center">
+                    <div class="imgCard d-flex">
+                        <div class="front">
+                            <img src="./images/katalog/front.png" alt="">
+                        </div>
+                        <div class="back">
+                            <img src="./images/katalog/back.png" alt="">
+                        </div>
+                    </div>
+                    <div class="nameCard">
+                        <p>
+                            25 пенсов "25 лет правления Елизаветы II" 
+                        </p>
+                    </div>
+                    <div class="yearCard">
+                        <p>
+                            1977
+                        </p>
+                    </div>
+                    <div class="materialCard">
+                        <p>алюминиевая бронза</p>
+                    </div>
+                    <div class="alfCard">
+                        <p>_ _</p>
+                    </div>
+                    <div class="gurdCard">
+                        <p>252 рифления</p>
+                    </div>
+                    <div class="kollekCard">
+                        <p>
+                            Коллекционная
+                        </p>
+                    </div>
+                    <div class="senaCard">
+                        <p>
+                            100 000 ₽
+                        </p>
+                        <img src="./images/katalog/icon/!.svg" alt="">
+                    </div>
+                    <div class="countCard">
+                        <p>100 шт.</p>
+                    </div>
+                    <img class="addMonet" src="./images/katalog/icon/addMonet.svg" alt="">
+                </div>
+                <div class="cardMonet d-flex align-items-center">
+                    <div class="imgCard d-flex">
+                        <div class="front">
+                            <img src="./images/katalog/front.png" alt="">
+                        </div>
+                        <div class="back">
+                            <img src="./images/katalog/back.png" alt="">
+                        </div>
+                    </div>
+                    <div class="nameCard">
+                        <p>
+                            25 пенсов "25 лет правления Елизаветы II" 
+                        </p>
+                    </div>
+                    <div class="yearCard">
+                        <p>
+                            1977
+                        </p>
+                    </div>
+                    <div class="materialCard">
+                        <p>алюминиевая бронза</p>
+                    </div>
+                    <div class="alfCard">
+                        <p>_ _</p>
+                    </div>
+                    <div class="gurdCard">
+                        <p>252 рифления</p>
+                    </div>
+                    <div class="kollekCard">
+                        <p>
+                            Коллекционная
+                        </p>
+                    </div>
+                    <div class="senaCard">
+                        <p>
+                            100 000 ₽
+                        </p>
+                        <img src="./images/katalog/icon/!.svg" alt="">
+                    </div>
+                    <div class="countCard">
+                        <p>100 шт.</p>
+                    </div>
+                    <img class="addMonet" src="./images/katalog/icon/addMonet.svg" alt="">
+                </div>
+                <div class="cardMonet d-flex align-items-center">
+                    <div class="imgCard d-flex">
+                        <div class="front">
+                            <img src="./images/katalog/front.png" alt="">
+                        </div>
+                        <div class="back">
+                            <img src="./images/katalog/back.png" alt="">
+                        </div>
+                    </div>
+                    <div class="nameCard">
+                        <p>
+                            25 пенсов "25 лет правления Елизаветы II" 
+                        </p>
+                    </div>
+                    <div class="yearCard">
+                        <p>
+                            1977
+                        </p>
+                    </div>
+                    <div class="materialCard">
+                        <p>алюминиевая бронза</p>
+                    </div>
+                    <div class="alfCard">
+                        <p>_ _</p>
+                    </div>
+                    <div class="gurdCard">
+                        <p>252 рифления</p>
+                    </div>
+                    <div class="kollekCard">
+                        <p>
+                            Коллекционная
+                        </p>
+                    </div>
+                    <div class="senaCard">
+                        <p>
+                            100 000 ₽
+                        </p>
+                        <img src="./images/katalog/icon/!.svg" alt="">
+                    </div>
+                    <div class="countCard">
+                        <p>100 шт.</p>
+                    </div>
+                    <img class="addMonet" src="./images/katalog/icon/addMonet.svg" alt="">
+                </div>
+                <div class="cardMonet d-flex align-items-center">
+                    <div class="imgCard d-flex">
+                        <div class="front">
+                            <img src="./images/katalog/front.png" alt="">
+                        </div>
+                        <div class="back">
+                            <img src="./images/katalog/back.png" alt="">
+                        </div>
+                    </div>
+                    <div class="nameCard">
+                        <p>
+                            25 пенсов "25 лет правления Елизаветы II" 
+                        </p>
+                    </div>
+                    <div class="yearCard">
+                        <p>
+                            1977
+                        </p>
+                    </div>
+                    <div class="materialCard">
+                        <p>алюминиевая бронза</p>
+                    </div>
+                    <div class="alfCard">
+                        <p>_ _</p>
+                    </div>
+                    <div class="gurdCard">
+                        <p>252 рифления</p>
+                    </div>
+                    <div class="kollekCard">
+                        <p>
+                            Коллекционная
+                        </p>
+                    </div>
+                    <div class="senaCard">
+                        <p>
+                            100 000 ₽
+                        </p>
+                        <img src="./images/katalog/icon/!.svg" alt="">
+                    </div>
+                    <div class="countCard">
+                        <p>100 шт.</p>
+                    </div>
+                    <img class="addMonet" src="./images/katalog/icon/addMonet.svg" alt="">
+                </div>
+                <div class="cardMonet d-flex align-items-center">
+                    <div class="imgCard d-flex">
+                        <div class="front">
+                            <img src="./images/katalog/front.png" alt="">
+                        </div>
+                        <div class="back">
+                            <img src="./images/katalog/back.png" alt="">
+                        </div>
+                    </div>
+                    <div class="nameCard">
+                        <p>
+                            25 пенсов "25 лет правления Елизаветы II" 
+                        </p>
+                    </div>
+                    <div class="yearCard">
+                        <p>
+                            1977
+                        </p>
+                    </div>
+                    <div class="materialCard">
+                        <p>алюминиевая бронза</p>
+                    </div>
+                    <div class="alfCard">
+                        <p>_ _</p>
+                    </div>
+                    <div class="gurdCard">
+                        <p>252 рифления</p>
+                    </div>
+                    <div class="kollekCard">
+                        <p>
+                            Коллекционная
+                        </p>
+                    </div>
+                    <div class="senaCard">
+                        <p>
+                            100 000 ₽
+                        </p>
+                        <img src="./images/katalog/icon/!.svg" alt="">
+                    </div>
+                    <div class="countCard">
+                        <p>100 шт.</p>
+                    </div>
+                    <img class="addMonet" src="./images/katalog/icon/addMonet.svg" alt="">
+                </div>
+                <div class="cardMonet d-flex align-items-center">
+                    <div class="imgCard d-flex">
+                        <div class="front">
+                            <img src="./images/katalog/front.png" alt="">
+                        </div>
+                        <div class="back">
+                            <img src="./images/katalog/back.png" alt="">
+                        </div>
+                    </div>
+                    <div class="nameCard">
+                        <p>
+                            25 пенсов "25 лет правления Елизаветы II" 
+                        </p>
+                    </div>
+                    <div class="yearCard">
+                        <p>
+                            1977
+                        </p>
+                    </div>
+                    <div class="materialCard">
+                        <p>алюминиевая бронза</p>
+                    </div>
+                    <div class="alfCard">
+                        <p>_ _</p>
+                    </div>
+                    <div class="gurdCard">
+                        <p>252 рифления</p>
+                    </div>
+                    <div class="kollekCard">
+                        <p>
+                            Коллекционная
+                        </p>
+                    </div>
+                    <div class="senaCard">
+                        <p>
+                            100 000 ₽
+                        </p>
+                        <img src="./images/katalog/icon/!.svg" alt="">
+                    </div>
+                    <div class="countCard">
+                        <p>100 шт.</p>
+                    </div>
+                    <img class="addMonet" src="./images/katalog/icon/addMonet.svg" alt="">
+                </div>
+                <div class="cardMonet d-flex align-items-center">
+                    <div class="imgCard d-flex">
+                        <div class="front">
+                            <img src="./images/katalog/front.png" alt="">
+                        </div>
+                        <div class="back">
+                            <img src="./images/katalog/back.png" alt="">
+                        </div>
+                    </div>
+                    <div class="nameCard">
+                        <p>
+                            25 пенсов "25 лет правления Елизаветы II" 
+                        </p>
+                    </div>
+                    <div class="yearCard">
+                        <p>
+                            1977
+                        </p>
+                    </div>
+                    <div class="materialCard">
+                        <p>алюминиевая бронза</p>
+                    </div>
+                    <div class="alfCard">
+                        <p>_ _</p>
+                    </div>
+                    <div class="gurdCard">
+                        <p>252 рифления</p>
+                    </div>
+                    <div class="kollekCard">
+                        <p>
+                            Коллекционная
+                        </p>
+                    </div>
+                    <div class="senaCard">
+                        <p>
+                            100 000 ₽
+                        </p>
+                        <img src="./images/katalog/icon/!.svg" alt="">
+                    </div>
+                    <div class="countCard">
+                        <p>100 шт.</p>
+                    </div>
+                    <img class="addMonet" src="./images/katalog/icon/addMonet.svg" alt="">
+                </div>
+                <div class="cardMonet d-flex align-items-center">
+                    <div class="imgCard d-flex">
+                        <div class="front">
+                            <img src="./images/katalog/front.png" alt="">
+                        </div>
+                        <div class="back">
+                            <img src="./images/katalog/back.png" alt="">
+                        </div>
+                    </div>
+                    <div class="nameCard">
+                        <p>
+                            25 пенсов "25 лет правления Елизаветы II" 
+                        </p>
+                    </div>
+                    <div class="yearCard">
+                        <p>
+                            1977
+                        </p>
+                    </div>
+                    <div class="materialCard">
+                        <p>алюминиевая бронза</p>
+                    </div>
+                    <div class="alfCard">
+                        <p>_ _</p>
+                    </div>
+                    <div class="gurdCard">
+                        <p>252 рифления</p>
+                    </div>
+                    <div class="kollekCard">
+                        <p>
+                            Коллекционная
+                        </p>
+                    </div>
+                    <div class="senaCard">
+                        <p>
+                            100 000 ₽
+                        </p>
+                        <img src="./images/katalog/icon/!.svg" alt="">
+                    </div>
+                    <div class="countCard">
+                        <p>100 шт.</p>
+                    </div>
+                    <img class="addMonet" src="./images/katalog/icon/addMonet.svg" alt="">
+                </div>
+                <div class="cardMonet d-flex align-items-center">
+                    <div class="imgCard d-flex">
+                        <div class="front">
+                            <img src="./images/katalog/front.png" alt="">
+                        </div>
+                        <div class="back">
+                            <img src="./images/katalog/back.png" alt="">
+                        </div>
+                    </div>
+                    <div class="nameCard">
+                        <p>
+                            25 пенсов "25 лет правления Елизаветы II" 
+                        </p>
+                    </div>
+                    <div class="yearCard">
+                        <p>
+                            1977
+                        </p>
+                    </div>
+                    <div class="materialCard">
+                        <p>алюминиевая бронза</p>
+                    </div>
+                    <div class="alfCard">
+                        <p>_ _</p>
+                    </div>
+                    <div class="gurdCard">
+                        <p>252 рифления</p>
+                    </div>
+                    <div class="kollekCard">
+                        <p>
+                            Коллекционная
+                        </p>
+                    </div>
+                    <div class="senaCard">
+                        <p>
+                            100 000 ₽
+                        </p>
+                        <img src="./images/katalog/icon/!.svg" alt="">
+                    </div>
+                    <div class="countCard">
+                        <p>100 шт.</p>
+                    </div>
+                    <img class="addMonet" src="./images/katalog/icon/addMonet.svg" alt="">
+                </div>
+                <div class="cardMonet d-flex align-items-center">
+                    <div class="imgCard d-flex">
+                        <div class="front">
+                            <img src="./images/katalog/front.png" alt="">
+                        </div>
+                        <div class="back">
+                            <img src="./images/katalog/back.png" alt="">
+                        </div>
+                    </div>
+                    <div class="nameCard">
+                        <p>
+                            25 пенсов "25 лет правления Елизаветы II" 
+                        </p>
+                    </div>
+                    <div class="yearCard">
+                        <p>
+                            1977
+                        </p>
+                    </div>
+                    <div class="materialCard">
+                        <p>алюминиевая бронза</p>
+                    </div>
+                    <div class="alfCard">
+                        <p>_ _</p>
+                    </div>
+                    <div class="gurdCard">
+                        <p>252 рифления</p>
+                    </div>
+                    <div class="kollekCard">
+                        <p>
+                            Коллекционная
+                        </p>
+                    </div>
+                    <div class="senaCard">
+                        <p>
+                            100 000 ₽
+                        </p>
+                        <img src="./images/katalog/icon/!.svg" alt="">
+                    </div>
+                    <div class="countCard">
+                        <p>100 шт.</p>
+                    </div>
+                    <img class="addMonet" src="./images/katalog/icon/addMonet.svg" alt="">
+                </div>
+                <div class="cardMonet d-flex align-items-center">
+                    <div class="imgCard d-flex">
+                        <div class="front">
+                            <img src="./images/katalog/front.png" alt="">
+                        </div>
+                        <div class="back">
+                            <img src="./images/katalog/back.png" alt="">
+                        </div>
+                    </div>
+                    <div class="nameCard">
+                        <p>
+                            25 пенсов "25 лет правления Елизаветы II" 
+                        </p>
+                    </div>
+                    <div class="yearCard">
+                        <p>
+                            1977
+                        </p>
+                    </div>
+                    <div class="materialCard">
+                        <p>алюминиевая бронза</p>
+                    </div>
+                    <div class="alfCard">
+                        <p>_ _</p>
+                    </div>
+                    <div class="gurdCard">
+                        <p>252 рифления</p>
+                    </div>
+                    <div class="kollekCard">
+                        <p>
+                            Коллекционная
+                        </p>
+                    </div>
+                    <div class="senaCard">
+                        <p>
+                            100 000 ₽
+                        </p>
+                        <img src="./images/katalog/icon/!.svg" alt="">
+                    </div>
+                    <div class="countCard">
+                        <p>100 шт.</p>
+                    </div>
+                    <img class="addMonet" src="./images/katalog/icon/addMonet.svg" alt="">
+                </div>
+                <div class="cardMonet d-flex align-items-center">
+                    <div class="imgCard d-flex">
+                        <div class="front">
+                            <img src="./images/katalog/front.png" alt="">
+                        </div>
+                        <div class="back">
+                            <img src="./images/katalog/back.png" alt="">
+                        </div>
+                    </div>
+                    <div class="nameCard">
+                        <p>
+                            25 пенсов "25 лет правления Елизаветы II" 
+                        </p>
+                    </div>
+                    <div class="yearCard">
+                        <p>
+                            1977
+                        </p>
+                    </div>
+                    <div class="materialCard">
+                        <p>алюминиевая бронза</p>
+                    </div>
+                    <div class="alfCard">
+                        <p>_ _</p>
+                    </div>
+                    <div class="gurdCard">
+                        <p>252 рифления</p>
+                    </div>
+                    <div class="kollekCard">
+                        <p>
+                            Коллекционная
+                        </p>
+                    </div>
+                    <div class="senaCard">
+                        <p>
+                            100 000 ₽
+                        </p>
+                        <img src="./images/katalog/icon/!.svg" alt="">
+                    </div>
+                    <div class="countCard">
+                        <p>100 шт.</p>
+                    </div>
+                    <img class="addMonet" src="./images/katalog/icon/addMonet.svg" alt="">
+                </div>
+                <div class="cardMonet d-flex align-items-center">
+                    <div class="imgCard d-flex">
+                        <div class="front">
+                            <img src="./images/katalog/front.png" alt="">
+                        </div>
+                        <div class="back">
+                            <img src="./images/katalog/back.png" alt="">
+                        </div>
+                    </div>
+                    <div class="nameCard">
+                        <p>
+                            25 пенсов "25 лет правления Елизаветы II" 
+                        </p>
+                    </div>
+                    <div class="yearCard">
+                        <p>
+                            1977
+                        </p>
+                    </div>
+                    <div class="materialCard">
+                        <p>алюминиевая бронза</p>
+                    </div>
+                    <div class="alfCard">
+                        <p>_ _</p>
+                    </div>
+                    <div class="gurdCard">
+                        <p>252 рифления</p>
+                    </div>
+                    <div class="kollekCard">
+                        <p>
+                            Коллекционная
+                        </p>
+                    </div>
+                    <div class="senaCard">
+                        <p>
+                            100 000 ₽
+                        </p>
+                        <img src="./images/katalog/icon/!.svg" alt="">
+                    </div>
+                    <div class="countCard">
+                        <p>100 шт.</p>
+                    </div>
+                    <img class="addMonet" src="./images/katalog/icon/addMonet.svg" alt="">
+                </div>
+                <div class="cardMonet d-flex align-items-center">
+                    <div class="imgCard d-flex">
+                        <div class="front">
+                            <img src="./images/katalog/front.png" alt="">
+                        </div>
+                        <div class="back">
+                            <img src="./images/katalog/back.png" alt="">
+                        </div>
+                    </div>
+                    <div class="nameCard">
+                        <p>
+                            25 пенсов "25 лет правления Елизаветы II" 
+                        </p>
+                    </div>
+                    <div class="yearCard">
+                        <p>
+                            1977
+                        </p>
+                    </div>
+                    <div class="materialCard">
+                        <p>алюминиевая бронза</p>
+                    </div>
+                    <div class="alfCard">
+                        <p>_ _</p>
+                    </div>
+                    <div class="gurdCard">
+                        <p>252 рифления</p>
+                    </div>
+                    <div class="kollekCard">
+                        <p>
+                            Коллекционная
+                        </p>
+                    </div>
+                    <div class="senaCard">
+                        <p>
+                            100 000 ₽
+                        </p>
+                        <img src="./images/katalog/icon/!.svg" alt="">
+                    </div>
+                    <div class="countCard">
+                        <p>100 шт.</p>
+                    </div>
+                    <img class="addMonet" src="./images/katalog/icon/addMonet.svg" alt="">
+                </div>
+
+
+
+
+
+
+
+
+
+            </div>
+            <div class="row align-items-center pageKatalog">
+                <div class="col-4 before"></div>
+                <div class="col-4">
+                 <div class="col-10 d-flex justify-content-center">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination pagination-flush">
+                          <li class="page-item"><a class="page-link" href="#"><img src="./images/katalog/icon/prev.svg" alt=""></a></li>
+                          <li class="page-item"><a class="page-link circle circle-md" href="#"><span>1</span></a></li>
+                          <li class="page-item"><a class="page-link circle circle-md" href="#"><span>2</span></a></li>
+                          <li class="page-item"><a class="page-link circle circle-md" href="#"><span>3</span></a></li>
+                          <li class="page-item disabled"><a class="page-link circle circle-md" href="#"><span>...</span></a></li>
+                          <li class="page-item active"><a class="page-link circle circle-md" href="#"><span>8</span></a></li>
+                          <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1" aria-disabled="true"><img src="./images/katalog/icon/next.svg" alt=""></a></li>
+                        </ul>
+                      </nav>
+                 </div>
+                </div>
+                <div class="col-4 after"></div>
+            </div>
+
         </div>
-       
     </main>
     
+
+       <!-- Footer starting -->
+
+       <footer>
+        <div class="container footer_container">
+          <div class="left">
+            <a href="#"> <img src="./images/footer/logo.png" alt="" /> </a>
+          </div>
+          <div class="right col-lg-10">
+            <div class="right_top">
+              <div class="right_top_left">
+                <ul>
+                  <li><a href="#">Каталог</a></li>
+                  <li><a href="#">Коллекция</a></li>
+                  <li><a href="#">Магазин</a></li>
+                </ul>
+              </div>
+              <div class="right_top_right">
+                <ul>
+                  <li><a href="#">О компании</a></li>
+                  <li><a href="#">Вопросы</a></li>
+                  <li><a href="#">Контакты</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="right_bottom">
+              <ul>
+                <li><a href="#">Как продать монеты</a></li>
+                <li><a href="#">Оформление заказа</a></li>
+                <li><a href="#">Доставка и оплата</a></li>
+                <li><a href="#">Возврат</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer_bottom">
+          <div class="container">
+            <div class="left">
+              <ul>
+                <li><a href="#">© 2021 CoinColl</a></li>
+                <li><a href="#">Политика конфиденциальности</a></li>
+              </ul>
+            </div>
+            <div class="right">
+              <ul>
+                <li><a href="#">Создание и продвижение -</a></li>
+                <li>
+                  <a href="#"><img src="./images/footer/logo_2.png" alt="" /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="top_btn">
+          <i class="fa-solid fa-angle-up"></i>
+          <p>вверх</p>
+        </div>
+      </footer>
+  
+      <!-- Bootstrap Js connection -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
