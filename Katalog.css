@@ -322,6 +322,81 @@ color: #322E27;
     margin-left: 2.8%;
     cursor: pointer;
 }
+.CardListCard{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.CardListCard .col-4{
+    display: flex;
+    justify-content: center;
+}
+.CardListCard .MonetCard{
+    filter: drop-shadow(0px 4px 30px rgba(0, 0, 0, 0.1));
+    box-shadow: 0px 10px 50px 3px #dfdada;
+    width: 90%;
+    margin-bottom: 30px;
+}
+.CardListCard .MonetCard .img{
+    display: flex;
+    justify-content: center;
+    background: #FAFAFA;
+}
+.CardListCard .MonetCard .img img{
+    border-radius: 50%;
+    margin: 30px 108px;
+}
+.CardListCard .MonetCard .propertiesCard{
+    background: #FFFFFF;
+    padding: 20px 30px 33.5px 30px;
+}
+.CardListCard .MonetCard .propertiesCard h3{
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 140%;
+text-align: center;
+color: #322E27;
+}
+.CardListCard .MonetCard .propertiesCard .properties{
+display: flex;
+flex-direction: column;
+}
+.CardListCard .MonetCard .propertiesCard .properties div{
+display: flex;
+justify-content: space-between;
+}
+.CardListCard .MonetCard .propertiesCard .properties div .left p{
+font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 13px;
+line-height: 100%;
+color: #7E7565;
+}
+.CardListCard .MonetCard .propertiesCard .properties div .right p{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 120%;
+    text-align: right;
+    color: #322E27;
+}
+.CardListCard .MonetCard .propertiesCard .properties div .right .sena{
+    font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 13px;
+line-height: 100%;
+display: flex;
+align-items: center;
+color: #322E27;
+}
+.CardListCard .MonetCard .propertiesCard .properties div .right .sena img{
+    margin-left: 5px;
+}
 .pageKatalog{
     margin-bottom: 100px;
 }
